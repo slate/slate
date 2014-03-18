@@ -21,7 +21,7 @@
 
 ## About
 
- Slate is/was a single day hack project that was intended to be a kickstarter, however I ran out of time so now it's a partially-implemented IRC client! I had pretty lofty goals but unfortunately there's not enough time to go around, there are still many features missing, and it's not quite in a usable state, but with some community interest and love maybe it will get there some day!
+ Slate is/was a single day hack project that was intended to be a kickstarter, however I ran out of time so now it's a partially-implemented IRC client! I had pretty lofty goals but unfortunately there's not enough time to go around, there are still many features missing, and it's not quite in a usable state, but with some community interest and love maybe it will get there some day! If not at least some useful/clean IRC libs are available at [https://github.com/slate](https://github.com/slate).
 
 ## Usage
 
