@@ -23,6 +23,8 @@
 
  Slate is/was a single day hack project that was intended to be a kickstarter, however I ran out of time so now it's a partially-implemented IRC client! I had pretty lofty goals but unfortunately there's not enough time to go around, there are still many features missing, and it's not quite in a usable state, but with some community interest and love maybe it will get there some day! If not at least some useful/clean IRC libs are available at [https://github.com/slate](https://github.com/slate).
 
+ Conceptually I really just wanted a clean, minimalistic IRC client, completely extensible through plugins. Ideally most of the core is written using such plugins. The entire thing should be themable, and the default theme should be programmer-friendly, aka get all the shit out of my way, I just want to see chat logs.
+
 ## Usage
 
  - press `?` to display the shortcut dialog
