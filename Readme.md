@@ -31,11 +31,7 @@
 
 ## Building
 
- Install node, [node-webkit](https://github.com/rogerwang/node-webkit) and clone the repo:
-
-```
-$ git clone git@github.com:slate/slate.git
-```
+ Install node, [node-webkit](https://github.com/rogerwang/node-webkit) and clone the repo.
 
  Build and run with:
 
