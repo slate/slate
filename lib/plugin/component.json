@@ -1,0 +1,8 @@
+{
+  "name": "plugin",
+  "description": "Plugin loader",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "component/dom": "0.9.0"
+  }
+}

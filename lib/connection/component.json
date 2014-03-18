@@ -1,0 +1,6 @@
+{
+  "name": "connection",
+  "description": "Connection management",
+  "scripts": ["index.js", "menu.js"],
+  "local": ["channel"]
+}

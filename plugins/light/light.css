@@ -1,0 +1,360 @@
+
+body {
+  -webkit-app-region: drag;
+  color: #262626;
+  background: white;
+  font: 12px "Helvetica Neue", Helvetica, arial, sans-serif;
+}
+
+h2 {
+  font-weight: 2.2em;
+}
+
+#shortcuts {
+  -webkit-column-count: 2;
+}
+
+#shortcuts li {
+  margin: 5px;
+}
+
+#shortcuts li em {
+  display: inline-block;
+  background: #323232;
+  border-radius: 2px;
+  font-size: .8em;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+  font-style: normal;
+}
+
+#shortcuts li em:last-child {
+  margin-right: 5px;
+}
+
+#dialog {
+  display: table;
+  text-align: center;
+}
+
+#dialog-wrapper {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#dialog-content {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#dialog h1 {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  font-weight: 200;
+}
+
+#dialog-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  text-decoration: none;
+  color: inherit;
+}
+
+#dialog-close:after {
+  font-family: 'slate';
+  content: '\e803';
+}
+
+#dialog-content form {
+  text-align: right;
+}
+
+#dialog-content form textarea,
+#dialog-content form input[type='text'],
+#dialog-content form input[type='password'] {
+  width: 70%;
+}
+
+#dialog-content form p {
+  margin: 6px 0;
+}
+
+form p {
+  font-weight: bold;
+}
+
+form input[type='text'],
+form input[type='password'],
+form textarea {
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  border-top-color: #ddd;
+  border-left-color: #ddd;
+  margin-left: 8px;
+  outline: none;
+}
+
+form input[type='text']:focus,
+form input[type='password']:focus,
+form textarea:focus {
+  border: 1px solid #3793da;
+  box-shadow: 0 0 5px 0 #79baff;
+}
+
+@-webkit-keyframes dialog {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(.2);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+body.showing-dialog #dialog {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.95);
+  -webkit-animation: dialog 300ms;
+}
+
+body.showing-dialog #dialog-contents {
+  -webkit-animation: scale 400ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.menu {
+  position: relative;
+  font-size: 13px;
+}
+
+.menu > a {
+  color: inherit;
+}
+.menu > a:after {
+  padding: 10px;
+}
+
+.menu:hover > a:after {
+  background: #323232;
+  color: white;
+}
+
+.menu > a:after {
+  font-family: "slate";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+}
+
+.menu:hover > .menu-items {
+  display: block;
+}
+
+.menu-items {
+  display: none;
+  background: #323232;
+  margin: 0;
+  padding: 0;
+  border-radius: 2px 0 2px 2px;
+  position: absolute;
+  right: 0;
+}
+
+.menu-items li {
+  list-style: none;
+}
+
+.menu-items li:first-child a {
+  padding-top: 20px;
+}
+
+.menu-items li:last-child a {
+  padding-bottom: 20px;
+}
+
+.menu-items li a {
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: .9em;
+  display: block;
+  color: #d5d5d5;
+}
+
+.menu-items li a:hover {
+  background: #282828;
+  color: white;
+}
+
+#window-menu > a:after {
+  content: '\e811';
+}
+
+#message-input {
+  background: #fafafa;
+  font-size: 1.2em;
+  padding: 1.6em;
+  height: 4.5em;
+  border: none;
+  border-top: 1px solid #eaeaea;
+  -webkit-text-smoothing: antialiased;
+  -webkit-transition: height 150ms;
+  outline: none;
+}
+
+#message-input.multiline {
+  height: 100px;
+}
+
+#message-input::-webkit-input-placeholder {
+  -webkit-text-smoothing: antialiased;
+}
+
+#channels {
+  display: -webkit-flex;
+  height: 100%;
+  -webkit-flex-direction: column;
+}
+
+.channel {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 25px;
+  opacity: .4;
+  overflow: hidden;
+  -webkit-flex-basis: 50px;
+  -webkit-transition: -webkit-flex 300ms cubic-bezier(0.175, 0.885, 0.320, 1.1);
+}
+
+.channel:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.channel.focused {
+  opacity: 1;
+  -webkit-flex: 1 1 auto;
+}
+
+.channel h2 {
+  cursor: pointer;
+}
+
+.channel h2:hover {
+  opacity: .75;
+}
+
+.channel-log {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 10px;
+  padding-bottom: 25px;
+  -webkit-app-region: no-drag;
+}
+
+.channel:not(.focused) table {
+  display: none;
+}
+
+.channel table {
+  width: 100%;
+}
+
+.channel td {
+  padding: 8px;
+  border-bottom: 1px dotted #eee;
+}
+
+.channel tr:last-child td {
+  border-bottom: none;
+}
+
+.channel .nick {
+  text-transform: lowercase;
+  text-align: right;
+  margin-right: 10px;
+  width: 80px;
+}
+
+.channel tr:not(.me) .nick {
+  color: #888;
+  font-weight: 200;
+}
+
+.channel tr.me .nick {
+  font-weight: bold;
+}
+
+.channel tr.quit .message,
+.channel tr.join .message,
+.channel tr.notice .message {
+  color: #888;
+  font-size: .85em;
+}
+
+.channel tr.quit .nick > span,
+.channel tr.join .nick > span,
+.channel tr.notice .nick > span {
+  display: none;
+}
+
+.channel tr.quit .date > span,
+.channel tr.join .date > span,
+.channel tr.notice .date > span {
+  color: #888;
+}
+
+.channel .date {
+  font-size: .8em;
+  text-align: right;
+  min-width: 120px;
+}
+
+#titlebar {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 50;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+}

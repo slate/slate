@@ -1,0 +1,8 @@
+{
+  "name": "settings",
+  "description": "Settings management",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "yields/store": "0.2.0"
+  }
+}

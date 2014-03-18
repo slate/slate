@@ -1,0 +1,11 @@
+{
+  "name": "shortcuts",
+  "description": "Shortcuts manager",
+  "scripts": ["index.js"],
+  "templates": ["shortcut.html", "dialog.html"],
+  "dependencies": {
+    "component/humanize-keys": "0.0.2",
+    "component/dom": "0.9.0",
+    "yields/k": "0.5.1"
+  }
+}

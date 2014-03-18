@@ -1,0 +1,8 @@
+{
+  "name": "message-input",
+  "description": "Main message input",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "component/inputarea": "0.2.1"
+  }
+}

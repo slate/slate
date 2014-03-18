@@ -1,0 +1,5 @@
+{
+  "name": "notify",
+  "description": "Notifications",
+  "scripts": ["index.js"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "slate",
+  "paths": ["lib"],
+  "local": ["boot"],
+  "scripts": ["index.js"]
+}

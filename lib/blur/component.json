@@ -1,0 +1,8 @@
+{
+  "name": "blur",
+  "description": "add .focus / .blur classnames to the body tag",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "component/dom": "0.9.0"
+  }
+}

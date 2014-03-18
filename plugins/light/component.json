@@ -1,0 +1,17 @@
+{
+  "name": "light",
+  "description": "Light theme",
+  "slate": {
+    "theme": true
+  },
+  "styles": [
+    "light.css",
+    "icons/css/slate-embedded.css"
+  ],
+  "fonts": [
+    "icons/font/slate.eot",
+    "icons/font/slate.svg",
+    "icons/font/slate.ttf",
+    "icons/font/slate.woff"
+  ]
+}

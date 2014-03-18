@@ -1,0 +1,6 @@
+{
+  "name": "log",
+  "description": "Logger singleton",
+  "scripts": ["index.js"],
+  "local": ["logger"]
+}

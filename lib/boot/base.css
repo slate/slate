@@ -1,0 +1,50 @@
+
+* {
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body,
+#slate,
+#content {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+#content {
+  padding: 100px;
+}
+
+#message-input {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+}
+
+.channel {
+  position: relative;
+}
+
+.channel > table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.channel .spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+}

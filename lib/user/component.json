@@ -1,0 +1,5 @@
+{
+  "name": "user",
+  "description": "IRC user",
+  "scripts": ["index.js"]
+}

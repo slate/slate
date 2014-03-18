@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slate</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="build/build.css">
+  </head>
+  <body>
+    <script>
+      window.node = window.require;
+    </script>
+
+    <script src="build/build.js"></script>
+
+    <div id="slate">
+
+      <div id="titlebar">
+        <div id="window-menu" class="menu">
+          <a href="#"></a>
+          
+          <ul class="menu-items">
+            <li><a href="#" id="fullscreen-window">Fullscreen</a></li>
+            <li><a href="#" id="maximize-window">Maximize</a></li>
+            <li><a href="#" id="minimize-window">Minimize</a></li>
+            <li><a href="#" id="close-window">Close</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="channels">
+          
+        </div>
+      </div>
+
+      <textarea id="message-input" placeholder="Message"></textarea>
+    </div>
+
+    <script>
+      slate();
+    </script>
+
+  </body>
+</html>

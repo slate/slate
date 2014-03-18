@@ -1,0 +1,5 @@
+{
+  "name": "logger",
+  "description": "Logger",
+  "scripts": ["index.js"]
+}

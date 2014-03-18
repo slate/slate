@@ -1,0 +1,8 @@
+{
+  "name": "titlebar",
+  "description": "Titlebar interactions",
+  "dependencies": {
+    "component/dom": "0.9.0"  
+  },
+  "scripts": ["index.js"]
+}

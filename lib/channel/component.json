@@ -1,0 +1,15 @@
+{
+  "name": "channel",
+  "description": "Channel management",
+  "scripts": ["index.js", "menu.js"],
+  "templates": ["channel.html", "message.html"],
+  "dependencies": {
+    "component/dom": "0.9.0",
+    "component/relative-date": "0.0.4",
+    "component/spinner": "1.0.0",
+    "component/scroll-to": "0.0.1",
+    "timoxley/offset": "0.0.2",
+    "component/events": "1.0.4",
+    "component/emitter": "*"
+  }
+}
