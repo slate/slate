@@ -17,7 +17,7 @@
 
 ## Installation
 
-  TODO:
+  TODO: when we have distribution set up
 
 ## About
 
