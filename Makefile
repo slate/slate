@@ -6,7 +6,11 @@ APP = /tmp/slate.nw
 run: build
 	@rm -f $(APP)
 	zip -rq $(APP) *
+ifeq ($(shell uname), Linux)
+	`which nw` $(APP)
+else
 	open -n -a node-webkit $(APP)
+endif
 
 build: node_modules components $(SRC)
 	@$(C8) build --standalone slate
