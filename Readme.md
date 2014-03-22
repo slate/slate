@@ -1,7 +1,6 @@
-
 # Slate
 
-  Modern IRC client built with web technologies and node.js for OSX, Linux, and Windows.
+  Modern IRC client built with web technologies and node.js for OSX, Linux, and eventually Windows.
 
   ![slate irc client](https://dl.dropboxusercontent.com/u/6396913/slate/Screen%20Shot%202013-10-19%20at%2011.45.08%20AM.png)
 
